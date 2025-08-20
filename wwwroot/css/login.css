@@ -1,0 +1,66 @@
+/* 让图片 cover 填满左栏，不变形 */
+.object-fit-cover {
+    object-fit: cover;
+}
+
+/* 眼睛 hover 变深色 */
+.bi-eye-fill:hover {
+    color: #000 !important;
+}
+
+/* 可选：隐藏滚动时的水平溢出 */
+body {
+    overflow-x: hidden;
+}
+
+.toggle-password-icon {
+    position: absolute;
+    top: 75%; /* 垂直居中 */
+    right: 10px; /* 靠右边 */
+    transform: translateY(-50%);
+    font-size: 1.5rem; /* ✅ 改变大小：越大越显眼 */
+    color: #aaa; /* 默认颜色（浅色） */
+    cursor: pointer;
+    transition: color 0.3s ease; /* 添加动画效果 */
+}
+
+    .toggle-password-icon.active {
+        color: #333; /* 深色激活状态 */
+    }
+
+/* 新增样式 */
+.workify-title {
+    color: #333;
+    font-weight: 600;
+}
+
+/* 确保表单在小屏幕上居中 */
+@media (max-width: 991.98px) {
+    .container-fluid {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+/* 左侧装饰面板样式 */
+.bi-shield-lock {
+    opacity: 0.9;
+}
+
+/* 表单区域样式优化 */
+.form-control:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+.btn-dark {
+    background-color: #333;
+    border-color: #333;
+    transition: all 0.3s ease;
+}
+
+.btn-dark:hover {
+    background-color: #555;
+    border-color: #555;
+    transform: translateY(-1px);
+}
